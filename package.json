@@ -1,0 +1,30 @@
+{
+  "name": "discordians-api",
+  "version": "1.0.0",
+  "description": "An fun and interesting api with some cool endpoints.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheLearneer/discordians-api.git"
+  },
+  "keywords": [
+    "api",
+    "fun",
+    "translate"
+  ],
+  "author": "Froosty",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/TheLearneer/discordians-api/issues"
+  },
+  "homepage": "https://github.com/TheLearneer/discordians-api#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "fast-html-parser": "^1.0.1",
+    "snekfetch": "^3.6.4"
+  }
+}
