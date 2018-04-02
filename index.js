@@ -17,7 +17,8 @@ router.get('/', (req, res) => {
         notice: 'If you are using this API, it would be super awesome if you credit the api devs i.e. TheDiscordians or simply refer to this API.',
         discord: 'https://discord.gg/jr8g83W',
         reddit: 'https://www.reddit.com/r/TheDiscordians',
-        docs: ''
+        docs: 'https://gist.github.com/TheLearneer/5f42aa96bc47d617a63b1a44b513b93a',
+		NOTE: 'Although we plan to keep the docs link in the API itself, but due to lack of time we will be notifying updates of API firstly on discord and only the link here will be updated.'
     });
 });
 
