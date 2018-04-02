@@ -1,6 +1,6 @@
 {
   "name": "discordians-api",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "An fun and interesting api with some cool endpoints.",
   "main": "index.js",
   "scripts": {
