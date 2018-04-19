@@ -1,0 +1,10 @@
+{
+  "name": "Discordians API",
+  "version": "1.0.0",
+  "description": "This is the official API service provided by Discordians team with some fun endpoint.",
+  "title": "Discordians API Docs",
+  "url" : "https://discordians-api.herokuapp.com",
+  "template" : {
+    "withCompare" : false
+  }
+}

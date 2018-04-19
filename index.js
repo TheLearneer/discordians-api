@@ -1,36 +1,5 @@
-const express = require('express');
-const app = express();
-const bodyParser = require('body-parser');
-const fs = require('fs');
+const API = require('./structures/apiClass');
 
-// configure app to use bodyParser()
-// this will let us get the data from a POST
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+const api = new API();
 
-const port = process.env.PORT || 3000;
-const router = express.Router(); // eslint-disable-line
-
-router.get('/', (req, res) => {
-    res.json({
-        about: 'Hello guys this is a hobby project. If you are interested in it you can meet the devs either around discord or reddit.',
-        notice: 'If you are using this API, it would be super awesome if you credit the api devs i.e. TheDiscordians or simply refer to this API.',
-        discord: 'https://discord.gg/jr8g83W',
-        reddit: 'https://www.reddit.com/r/TheDiscordians',
-        docs: 'https://gist.github.com/TheLearneer/5f42aa96bc47d617a63b1a44b513b93a',
-		NOTE: 'Although we plan to keep the docs link in the API itself, but due to lack of time we will be notifying updates of API firstly on discord and only the link here will be updated.'
-    });
-});
-
-// Loading different routes from different files.
-fs.readdirSync('./routes').filter(file => app.use(require(`./routes/${file}`)));
-
-app.use('/', router);
-
-// handling the 404 error
-app.get('*', (req, res) => {
-    res.json({ error: 'Found nothing around here... Is this an abandoned land or land of possibilities ??' });
-});
-
-// starting hte api
-app.listen(port, () => console.log(`API is listening on port ${port}`));
+api.start();
